@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_common_intros",
+  "info": {
+    "displayName": "Intro",
+    "icon": "briefcase"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

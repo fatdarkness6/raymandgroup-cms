@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_content_section_content_home_pages",
+  "info": {
+    "displayName": "Content.HomePage",
+    "icon": "check"
+  },
+  "options": {},
+  "attributes": {
+    "IntroductionAboutCompanies": {
+      "type": "component",
+      "component": "content-section.content-home-page-introduction-about-compnaies",
+      "repeatable": true,
+      "required": true,
+      "max": 1
+    },
+    "card": {
+      "type": "component",
+      "component": "content-section.content-home-page-introduction-about-compnaies-card",
+      "repeatable": true,
+      "required": true
+    }
+  },
+  "config": {}
+}

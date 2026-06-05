@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_content_section_content_home_page_introduction_about_compnaies",
+  "info": {
+    "displayName": "Content.HomePage.IntroductionAboutCompnaies"
+  },
+  "options": {},
+  "attributes": {
+    "Intro": {
+      "type": "component",
+      "component": "common.intro",
+      "repeatable": true,
+      "required": true,
+      "max": 1
+    }
+  },
+  "config": {}
+}

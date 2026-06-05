@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_common_news_data",
+  "info": {
+    "displayName": "News.data",
+    "icon": "calendar"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Intro": {
+      "type": "component",
+      "component": "common.intro",
+      "repeatable": false
+    },
+    "date": {
+      "type": "date",
+      "default": "2025-12-02"
+    }
+  },
+  "config": {}
+}

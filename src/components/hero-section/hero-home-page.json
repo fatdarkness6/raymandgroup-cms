@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_hero_section_hero_home_pages",
+  "info": {
+    "displayName": "Hero.HomePage",
+    "icon": "alien"
+  },
+  "options": {},
+  "attributes": {
+    "Intro": {
+      "type": "component",
+      "component": "common.intro",
+      "repeatable": true,
+      "required": true,
+      "max": 1
+    }
+  },
+  "config": {}
+}

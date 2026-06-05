@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_news_news",
+  "info": {
+    "displayName": "News",
+    "icon": "twitter"
+  },
+  "options": {},
+  "attributes": {
+    "IntroductionForNews": {
+      "type": "component",
+      "component": "common.intro",
+      "repeatable": false
+    },
+    "NewsCard": {
+      "type": "component",
+      "component": "common.news-data",
+      "repeatable": true,
+      "required": true
+    }
+  },
+  "config": {}
+}
