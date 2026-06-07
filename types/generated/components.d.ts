@@ -1,5 +1,17 @@
 import type { Schema, Struct } from '@strapi/strapi';
 
+export interface CommonBackgroudImage extends Struct.ComponentSchema {
+  collectionName: 'components_common_backgroud_images';
+  info: {
+    displayName: 'OverlayImage';
+    icon: 'file';
+  };
+  attributes: {
+    image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    title: Schema.Attribute.String;
+  };
+}
+
 export interface CommonIntro extends Struct.ComponentSchema {
   collectionName: 'components_common_intros';
   info: {
@@ -86,6 +98,55 @@ export interface ContentSectionContentHomePageIntroductionAboutCompnaiesCard
   };
 }
 
+export interface ContentSectionContentTechLab extends Struct.ComponentSchema {
+  collectionName: 'components_content_section_content_tech_labs';
+  info: {
+    displayName: 'Content.TechLab';
+    icon: 'car';
+  };
+  attributes: {
+    buttons: Schema.Attribute.Component<
+      'content-section.content-tech-lab-buttons',
+      true
+    >;
+    overlayImage: Schema.Attribute.Component<'common.backgroud-image', true>;
+    visionAndMission: Schema.Attribute.Component<
+      'content-section.content-tech-lab-vision-and-mission',
+      true
+    >;
+  };
+}
+
+export interface ContentSectionContentTechLabButtons
+  extends Struct.ComponentSchema {
+  collectionName: 'components_content_section_content_tech_lab_buttons';
+  info: {
+    displayName: 'Content.TechLab.Buttons';
+    icon: 'file';
+  };
+  attributes: {
+    color: Schema.Attribute.Enumeration<['blue', 'red']> &
+      Schema.Attribute.Required &
+      Schema.Attribute.DefaultTo<'blue'>;
+    link: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface ContentSectionContentTechLabVisionAndMission
+  extends Struct.ComponentSchema {
+  collectionName: 'components_content_section_content_tech_lab_vision_and_missions';
+  info: {
+    displayName: 'Content.TechLab.VisionAndMission';
+    icon: 'eye';
+  };
+  attributes: {
+    description: Schema.Attribute.Text;
+    image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    title: Schema.Attribute.String;
+  };
+}
+
 export interface HeroSectionHeroHomePage extends Struct.ComponentSchema {
   collectionName: 'components_hero_section_hero_home_pages';
   info: {
@@ -101,6 +162,16 @@ export interface HeroSectionHeroHomePage extends Struct.ComponentSchema {
         },
         number
       >;
+  };
+}
+
+export interface HeroSectionHeroTechLab extends Struct.ComponentSchema {
+  collectionName: 'components_hero_section_hero_tech_labs';
+  info: {
+    displayName: 'Hero.TechLab';
+  };
+  attributes: {
+    overlayImage: Schema.Attribute.Component<'common.backgroud-image', false>;
   };
 }
 
@@ -185,12 +256,17 @@ export interface SharedSlider extends Struct.ComponentSchema {
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
+      'common.backgroud-image': CommonBackgroudImage;
       'common.intro': CommonIntro;
       'common.news-data': CommonNewsData;
       'content-section.content-home-page': ContentSectionContentHomePage;
       'content-section.content-home-page-introduction-about-compnaies': ContentSectionContentHomePageIntroductionAboutCompnaies;
       'content-section.content-home-page-introduction-about-compnaies-card': ContentSectionContentHomePageIntroductionAboutCompnaiesCard;
+      'content-section.content-tech-lab': ContentSectionContentTechLab;
+      'content-section.content-tech-lab-buttons': ContentSectionContentTechLabButtons;
+      'content-section.content-tech-lab-vision-and-mission': ContentSectionContentTechLabVisionAndMission;
       'hero-section.hero-home-page': HeroSectionHeroHomePage;
+      'hero-section.hero-tech-lab': HeroSectionHeroTechLab;
       'news.news': NewsNews;
       'shared.media': SharedMedia;
       'shared.quote': SharedQuote;

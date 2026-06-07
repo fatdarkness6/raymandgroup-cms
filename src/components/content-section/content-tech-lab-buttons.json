@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_content_section_content_tech_lab_buttons",
+  "info": {
+    "displayName": "Content.TechLab.Buttons",
+    "icon": "file"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    },
+    "color": {
+      "type": "enumeration",
+      "required": true,
+      "default": "blue",
+      "enum": [
+        "blue",
+        "red"
+      ]
+    }
+  },
+  "config": {}
+}

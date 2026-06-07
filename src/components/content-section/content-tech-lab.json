@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_content_section_content_tech_labs",
+  "info": {
+    "displayName": "Content.TechLab",
+    "icon": "car"
+  },
+  "options": {},
+  "attributes": {
+    "visionAndMission": {
+      "type": "component",
+      "component": "content-section.content-tech-lab-vision-and-mission",
+      "repeatable": true
+    },
+    "overlayImage": {
+      "type": "component",
+      "component": "common.backgroud-image",
+      "repeatable": true
+    },
+    "buttons": {
+      "type": "component",
+      "component": "content-section.content-tech-lab-buttons",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

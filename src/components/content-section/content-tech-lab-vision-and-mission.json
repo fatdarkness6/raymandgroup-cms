@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_content_section_content_tech_lab_vision_and_missions",
+  "info": {
+    "displayName": "Content.TechLab.VisionAndMission",
+    "icon": "eye"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

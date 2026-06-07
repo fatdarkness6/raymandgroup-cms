@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_hero_section_hero_tech_labs",
+  "info": {
+    "displayName": "Hero.TechLab"
+  },
+  "options": {},
+  "attributes": {
+    "overlayImage": {
+      "type": "component",
+      "component": "common.backgroud-image",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}
