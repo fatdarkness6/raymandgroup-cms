@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_content_section_content_slug_of_tech_lab_data",
+  "info": {
+    "displayName": "Content.SlugOfTechLab",
+    "icon": "hashtag"
+  },
+  "options": {},
+  "attributes": {
+    "overlayImage": {
+      "type": "component",
+      "component": "common.backgroud-image",
+      "repeatable": false
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "description": {
+      "type": "blocks"
+    }
+  },
+  "config": {}
+}

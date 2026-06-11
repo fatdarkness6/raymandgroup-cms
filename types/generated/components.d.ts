@@ -7,6 +7,7 @@ export interface CommonBackgroudImage extends Struct.ComponentSchema {
     icon: 'file';
   };
   attributes: {
+    description: Schema.Attribute.Text;
     image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     title: Schema.Attribute.String;
   };
@@ -95,6 +96,20 @@ export interface ContentSectionContentHomePageIntroductionAboutCompnaiesCard
     Link: Schema.Attribute.String;
     shortDescription: Schema.Attribute.Blocks;
     title: Schema.Attribute.String;
+  };
+}
+
+export interface ContentSectionContentSlugOfTechLabData
+  extends Struct.ComponentSchema {
+  collectionName: 'components_content_section_content_slug_of_tech_lab_data';
+  info: {
+    displayName: 'Content.SlugOfTechLab';
+    icon: 'hashtag';
+  };
+  attributes: {
+    description: Schema.Attribute.Blocks;
+    image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    overlayImage: Schema.Attribute.Component<'common.backgroud-image', false>;
   };
 }
 
@@ -262,6 +277,7 @@ declare module '@strapi/strapi' {
       'content-section.content-home-page': ContentSectionContentHomePage;
       'content-section.content-home-page-introduction-about-compnaies': ContentSectionContentHomePageIntroductionAboutCompnaies;
       'content-section.content-home-page-introduction-about-compnaies-card': ContentSectionContentHomePageIntroductionAboutCompnaiesCard;
+      'content-section.content-slug-of-tech-lab-data': ContentSectionContentSlugOfTechLabData;
       'content-section.content-tech-lab': ContentSectionContentTechLab;
       'content-section.content-tech-lab-buttons': ContentSectionContentTechLabButtons;
       'content-section.content-tech-lab-vision-and-mission': ContentSectionContentTechLabVisionAndMission;

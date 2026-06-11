@@ -18,6 +18,9 @@
     },
     "title": {
       "type": "string"
+    },
+    "description": {
+      "type": "text"
     }
   },
   "config": {}

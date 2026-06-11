@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tech_lab_tests",
+  "info": {
+    "singularName": "tech-lab-test",
+    "pluralName": "tech-lab-tests",
+    "displayName": "SlugOfTechLab"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "slug": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "content-section.content-slug-of-tech-lab-data",
+      "repeatable": true,
+      "max": 1
+    },
+    "exclusiveParam": {
+      "type": "uid",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}
